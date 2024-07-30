@@ -1,5 +1,5 @@
-access_key = "dwd"
-secret_key = "sds"
+access_key = ""
+secret_key = ""
 users = {
   "username-1" = {
     "name"  = "IAM username"
