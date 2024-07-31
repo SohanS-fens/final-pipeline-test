@@ -5,6 +5,12 @@ module "aws_create_iam_user" {
   iam_user_name = each.key
 }
 
+# # Module to add iam_login_profile
+module "aws_iam_login_profile" {
+  source = "./iam_login_profile"
+  users = var.users
+}
+
 # Module to add iam_role to iam user
 module "aws_iam_role" {
   source = "./iam_role"
